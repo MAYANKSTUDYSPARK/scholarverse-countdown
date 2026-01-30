@@ -1,7 +1,7 @@
 import Snowfall from '@/components/Snowfall';
 import SantaHat from '@/components/SantaHat';
-import SVLogo from '@/components/SVLogo';
-import PWLogo from '@/components/PWLogo';
+import svLogo from '@/assets/sv-logo.jpg';
+import pwLogo from '@/assets/pw-logo.jpg';
 import { Send } from 'lucide-react';
 
 const Index = () => {
@@ -26,7 +26,11 @@ const Index = () => {
           
           <div className="flex items-center gap-3 md:gap-5">
             {/* SV Logo */}
-            <SVLogo className="w-14 h-14 md:w-20 md:h-20 logo-glow" />
+            <img 
+              src={svLogo} 
+              alt="ScholarVerse Logo" 
+              className="w-14 h-14 md:w-20 md:h-20 rounded-full logo-glow object-cover shadow-lg shadow-purple-500/30"
+            />
             
             {/* Title */}
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-black title-gradient tracking-tight">
@@ -52,7 +56,11 @@ const Index = () => {
             href="#"
             className="btn-pw animate-pulse-glow flex items-center gap-4 px-8 py-5 md:px-12 md:py-6 rounded-2xl text-foreground font-bold text-xl md:text-2xl"
           >
-            <PWLogo className="w-12 h-12 md:w-14 md:h-14" />
+            <img 
+              src={pwLogo} 
+              alt="Physics Wallah" 
+              className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover bg-white"
+            />
             <span>Physics Wallah</span>
           </a>
         </div>
